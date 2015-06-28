@@ -38,9 +38,9 @@ class CourseraSpider(object):
 		return vedioLinks, pdfLinks, subtitleLinks
 
 def main():
-	email = 'philokeys@gmail.com'
-	password = '19931012'
-	courseName = "progfun-005"
+	email = '*'
+	password = '*'
+	courseName = "*"
 	url = "https://class.coursera.org/{course}/lecture"
 	spider = CourseraSpider(url.format(course = courseName), email, password)
 	spider.startSpider()
